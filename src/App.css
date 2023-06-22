@@ -3,56 +3,51 @@
 } */
 body {
   background-color: #1B263B;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5vh 5vw;
 }
 
+
 .all {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
   background-color: #0D1B2A;
   border: 1px solid #0D1B2A;
   width: 90vw;
   height: 90vh;
   top: 5vh;
   border-radius: 20px;
+  flex-shrink: 0;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: 60% auto;
-  justify-content: space-around;
-  position:absolute;
-  width: 100%;
-  color: #E0E1DD;
-}
-
-.header span {
-  font-weight: bold;
-}
-.header ul {
-  margin: 0;
-  padding: 10px 25px;
+nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-right: 8vw;
+  justify-content: space-between;
+  padding: 20px 80px;
+  
 }
 
-.header li {
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
   list-style: none;
-  padding-right: 5%;
-  font-size: 1.2rem;
-  font-family: 'Ubuntu', sans-serif;  
+  padding: 0 20px;
+position: relative;
 }
 
-.header h1 {
-  padding-left: 8vw;
+#navbar li a, .navlink {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #E0E1DD;
+  transition: .3s ease-in-out;
 }
 
+#navbar li a:hover {
+  color: #778DA9;
+}
 
 /*****************************  HERO  ***********************************/
 
@@ -66,7 +61,6 @@ body {
   padding: 30px 30px; 
   margin: 5px;
   text-align: center;
-  padding-top: 20vh;
 }
 
 .hero .barre {
@@ -95,17 +89,60 @@ body {
 
 /******************************  APropos  **********************************/
 
-.apropos {
+.page {
   display: grid;
   grid-template-columns: 30%  70%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: #E0E1DD;
 }
 
-.apropos .propos {
+.page .propos {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
+/**************************** Compétences ********************************/
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 4px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card-competence {
+  background-color: #1B263B;
+  width: auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px 20px;
+  max-height: 150px;
+  padding-left: 50px;
+  padding-right: 10vh;
+}
+
+
+.card-competence img {
+  width: auto;
+  height: 100%;
+  max-width: 215px;
+  max-height: 150px;
+  object-fit: cover;
+}
+.image-container {
+  width: 10%;
+}
