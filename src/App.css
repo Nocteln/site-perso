@@ -1,0 +1,111 @@
+/* *{
+  
+} */
+body {
+  background-color: #1B263B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  background-color: #0D1B2A;
+  border: 1px solid #0D1B2A;
+  width: 90vw;
+  height: 90vh;
+  top: 5vh;
+  border-radius: 20px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 60% auto;
+  justify-content: space-around;
+  position:absolute;
+  width: 100%;
+  color: #E0E1DD;
+}
+
+.header span {
+  font-weight: bold;
+}
+.header ul {
+  margin: 0;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8vw;
+}
+
+.header li {
+  list-style: none;
+  padding-right: 5%;
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;  
+}
+
+.header h1 {
+  padding-left: 8vw;
+}
+
+
+/*****************************  HERO  ***********************************/
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #E0E1DD;
+  padding: 30px 30px; 
+  margin: 5px;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.hero .barre {
+  width: 100%;
+  height: 2px;
+  background-color: #415A77; /* Couleur de la barre */
+  margin-top: 10px; /* Espace au-dessus de la barre */
+  margin-bottom: 10px; /* Espace en-dessous de la barre */
+}
+
+.hero img {
+  width: 50%;
+  height: 50%;
+}
+.barre2 {
+  width: 2px;
+  margin-left: 25px;
+  height: 70%;
+  background-color: #415A77;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 95% 5%;
+}
+
+/******************************  APropos  **********************************/
+
+.apropos {
+  display: grid;
+  grid-template-columns: 30%  70%;
+  align-items: center;
+  justify-content: space-between;
+  color: #E0E1DD;
+}
+
+.apropos .propos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
