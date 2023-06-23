@@ -4,6 +4,7 @@
 body {
   background-color: #1B263B;
   padding: 5vh 5vw;
+  overflow: hidden;
 }
 
 
@@ -61,7 +62,6 @@ position: relative;
   padding: 30px 30px; 
   margin: 5px;
   text-align: center;
-  
 }
 
 .hero .barre {
@@ -95,6 +95,7 @@ position: relative;
   align-items: center;
   justify-content: center;
   color: #E0E1DD;
+  height: 75vh;
 }
 
 .page .propos {
@@ -118,15 +119,18 @@ position: relative;
   padding: 20px 20px;
   max-height: 15vh;
   padding-left: 50px;
-  padding-right: 10vh;
+  padding-right: 10vh ;
 }
 
+.card-competence .part1 {
+  font-size: 2vh;
+  line-height: 1;
+} 
 
 .card-competence img {
   width: auto;
   height: 100%;
   max-width: 9vw;
-  object-fit: cover;
 }
 .image-container {
   padding-right: 2vw;

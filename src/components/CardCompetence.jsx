@@ -6,8 +6,7 @@ export default function CardCompetence({ opt }) {
         <div>
           <p>Languages utilisé : {opt.language}</p>
           <p>Framework utilisé : {opt.frame}</p>
-          <p>Maitrise estimée : </p>
-         
+          <p>Maitrise estimée : {opt.maitr}</p>
         </div>
       </div>
       <div className="image-container">
