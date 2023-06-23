@@ -82,9 +82,6 @@ position: relative;
   height: 70%;
   background-color: #415A77;
 }
-.divHeroo {
-  position: fixed;
-}
 .hero {
   display: grid;
   grid-template-columns: 95% 5%;
@@ -108,20 +105,6 @@ position: relative;
 
 /**************************** Compétences ********************************/
 
-.progress-bar {
-  width: 100%;
-  height: 20px;
-  background-color: #e0e0e0;
-  border-radius: 4px;
-}
-
-.progress {
-  height: 100%;
-  background-color: #4caf50;
-  border-radius: 4px;
-  color: #ffffff;
-  text-align: center;
-}
 
 .card-competence {
   background-color: #1B263B;
