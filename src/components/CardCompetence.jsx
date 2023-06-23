@@ -7,11 +7,7 @@ export default function CardCompetence({ opt }) {
           <p>Languages utilisé : {opt.language}</p>
           <p>Framework utilisé : {opt.frame}</p>
           <p>Maitrise estimée : </p>
-          <div className="progress-bar">
-            <div className="progress" style={{ width: `${opt.progress}%` }}>
-              {opt.progress}%
-            </div>
-          </div>
+         
         </div>
       </div>
       <div className="image-container">

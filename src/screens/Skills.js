@@ -7,7 +7,6 @@ import discordimg from "../img/discord.png";
 import rbximg from "../img/rbx2.png";
 
 function Skills() {
-  // state
   const web = {
     titre: "Developpement Web",
     language: "Javascript, HTML, CSS",
@@ -29,18 +28,13 @@ function Skills() {
     progress: 50,
     img: rbximg,
   };
-
-  // comportements
-
-  //affichage
-
   return (
     <div className="all">
       <Header />
 
       <div className="page">
         <Hero />
-        <div>
+        <div className="tout-comp">
           <CardCompetence opt={web} />
           <CardCompetence opt={discord} />
           <CardCompetence opt={rbx} />

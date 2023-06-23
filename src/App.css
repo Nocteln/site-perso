@@ -146,3 +146,7 @@ position: relative;
 .image-container {
   width: 10%;
 }
+
+.tout-comp {
+  max-width: 60vw;
+}
