@@ -181,11 +181,11 @@ function About() {
                   Autre
                 </button> */}
               </div>
-              {selectedCategory && (
+              {
                 <button onClick={() => setFilteredData(projectsData)}>
                   Annuler la recherche
                 </button>
-              )}
+              }
             </div>
             {/* <CardProject opt={kstcat} />
             <CardProject opt={kstcat} />
