@@ -1,21 +1,22 @@
 /* *{
   
 } */
+
 body {
-  background-color: #1B263B;
+  /* background-color: #1B263B;
   padding: 5vh 5vw;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
-
 .all {
+  height: 100vh;
   background-color: #0D1B2A;
-  border: 1px solid #0D1B2A;
+  /* border: 1px solid #0D1B2A;
   width: 90vw;
   height: 90vh;
   top: 5vh;
   border-radius: 20px;
-  flex-shrink: 0;
+  flex-shrink: 0; */
 }
 
 nav {
@@ -44,6 +45,7 @@ position: relative;
   font-weight: 600;
   color: #E0E1DD;
   transition: .3s ease-in-out;
+  cursor: pointer;
 }
 
 #navbar li a:hover {
@@ -96,6 +98,8 @@ position: relative;
   justify-content: center;
   color: #E0E1DD;
   height: 75vh;
+  padding-top: 20px;
+  padding-left:  5vw;
 }
 
 .page .propos {
@@ -117,7 +121,7 @@ position: relative;
   text-align: center;
   margin: 20px;
   padding: 20px 20px;
-  max-height: 15vh;
+  /* max-height: 15vh; */
   padding-left: 50px;
   padding-right: 10vh ;
 }
@@ -140,7 +144,7 @@ position: relative;
 .tout-comp {
   max-width: 60vw;
   overflow: auto;
-  max-height: 65vh;
+  max-height: 75vh;
 }
 
 
@@ -170,7 +174,8 @@ position: relative;
   justify-content: space-between;
   border-radius: 5px;
   padding: 15px;
-  margin: 15px;
+  margin: 20px;
+  /* height: 15vh; */
 }
 
 .projectAll .desc {
