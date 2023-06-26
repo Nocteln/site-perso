@@ -3,38 +3,46 @@ import "../App.css";
 import webimg from "../img/developpement-web.png";
 import discordimg from "../img/discord.png";
 import rbximg from "../img/rbx2.png";
+import kstcatimg from "../img/kstcatlogo.PNG";
 
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Propos from "../components/Propos";
 import CardCompetence from "../components/CardCompetence";
+import CardProject from "../components/CardProjet";
 
 function About() {
   // state
-  const [composant, setComposant] = useState(1);
+  const [composant, setComposant] = useState(2);
 
   // comportements
 
-  const web = {
+  const webcomp = {
     titre: "Developpement Web",
     language: "Javascript, HTML, CSS",
     frame: "React.js",
     maitr: "J'ai des bases mais à consolider",
     img: webimg,
   };
-  const discord = {
+  const discordcomp = {
     titre: "Developpement Discord",
     language: "Javascript",
     frame: "Discord.js",
     maitr: "De bonnes bases",
     img: discordimg,
   };
-  const rbx = {
+  const rbxcomp = {
     titre: "Developpement Roblox",
     language: "Lua",
     frame: "Aucun",
     maitr: "Plus fort en build qu'en code",
     img: rbximg,
+  };
+
+  const kstcat = {
+    nom: "Kstcat",
+    description: "projet de science de l'ingénieur",
+    ref: "https://github.com/Nocteln/kst-cat",
+    img: kstcatimg,
   };
 
   const comp3 = () => {
@@ -44,10 +52,10 @@ function About() {
     setComposant(4);
   };
 
-  const handleClick = () => {
+  const comp2 = () => {
     setComposant(2);
-    console.log(composant);
   };
+
   //affichage
 
   return (
@@ -57,7 +65,9 @@ function About() {
         <div>
           <ul id="navbar">
             <li className="navlink">1</li>
-            <li className="navlink">2</li>
+            <li className="navlink" onClick={comp2}>
+              2
+            </li>
             <li className="navlink" onClick={comp3}>
               3
             </li>
@@ -74,8 +84,27 @@ function About() {
           <Propos />
         ) : composant === 3 ? (
           <div className="tout-comp">
-            <CardCompetence opt={web} /> <CardCompetence opt={discord} />
-            <CardCompetence opt={rbx} />
+            <CardCompetence opt={webcomp} />{" "}
+            <CardCompetence opt={discordcomp} />
+            <CardCompetence opt={rbxcomp} />
+          </div>
+        ) : composant === 2 ? (
+          <div className="tout-comp">
+            <div className="chercher">
+              <form>
+                <input type="text" placeholder="Rechercher..." />
+              </form>
+              <div className="button-chercher">
+                <button>categorie 1</button>
+                <button>categorie 2</button>
+                <button>categorie 3</button>
+              </div>
+            </div>
+            <CardProject opt={kstcat} />
+            <CardProject opt={kstcat} />
+            <CardProject opt={kstcat} />
+            <CardProject opt={kstcat} />
+            <CardProject opt={kstcat} />
           </div>
         ) : (
           "salu"

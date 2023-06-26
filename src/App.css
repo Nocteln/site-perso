@@ -139,4 +139,61 @@ position: relative;
 
 .tout-comp {
   max-width: 60vw;
+  overflow: auto;
+  max-height: 65vh;
+}
+
+
+/******************************** Projets ********************************/
+
+.chercher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chercher input {
+  max-width: 30vw;
+  min-width: 30vw
+}
+
+.button-chercher button {
+  margin: 10px;
+  min-width: 10vw
+}
+
+
+.projectAll {
+  display: flex;
+  align-items: center;
+  background-color: #1B263B;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.projectAll .desc {
+  text-align: center;
+  color: #E0E1DD;
+  line-height: 1;
+  
+}
+
+.projectAll a {
+  color: #E0E1DD;
+  text-decoration: none;
+  background-color: #0D1B2A;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+}
+
+.projectAll a:hover {
+background-color: #E0E1DD;
+color: #0D1B2A;
+}
+.projectAll img {
+  width: 15%;
 }
