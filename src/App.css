@@ -2,11 +2,12 @@
   
 } */
 
-/* body {
-  background-color: #1B263B;
-  padding: 5vh 5vw;
-  overflow: hidden; 
-}*/
+body {
+  /* background-color: #1B263B;
+  padding: 5vh 5vw; 
+  overflow: hidden; */
+  max-height: 100vh;
+}
 
 .all {
   height: 100vh;
@@ -201,4 +202,114 @@ color: #0D1B2A;
 }
 .projectAll img {
   width: 15%;
+}
+
+
+.contactForm {
+  width: 50%;
+  min-width: 40vw;
+  max-width: 60vw;
+  height: 500px;
+  background: #1b263b;
+  display: grid;
+  grid-template-rows: repeat(3, 104px);
+  border-radius: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  color: #e0e1dd;
+  padding: 50px;
+  font-size: 1.3rem;
+} 
+
+.contact-container {
+  /* margin-left: 5vw; */
+  overflow: auto;
+  max-height: 75vh;
+
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactForm::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 150px;
+  background: linear-gradient(65deg, #415a77, #778da9);
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm div {
+  transition: 0.2s;
+}
+
+.contactForm label {
+  letter-spacing: 1px;
+}
+
+.contactForm input[type="text"],
+.contactForm textarea {
+  margin: 7px 0 7px;
+  border: 1px solid transparent;
+  background: #e0e1dd;
+  height: 36px;
+  width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  font-size: 1.1rem;
+  padding-left: 10px;
+  transition: 0.2s;
+}
+
+.contactForm input[type="text"]:focus,
+.contactForm textarea:focus {
+  border: 1px solid #5ef9a4;
+}
+
+.contactForm span {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  color: rgb(233, 42, 42);
+}
+
+.contactForm input[type="submit"] {
+  border: none;
+  background: linear-gradient(65deg, #415a77, #778da9);
+  width: 70%;
+  margin: 12px auto 0;
+  color: #0D1B2A;
+  border-radius: 150px;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm input[type="submit"]:hover {
+  filter: brightness(105%);
+  transform: translateX(2px);
+}
+
+.contactForm.error input {
+  color: red;
+  border: 1px solid rgba(255, 0, 0, 0.527);
+}
+
+.contactForm.error span {
+  visibility: visible;
+  opacity: 1;
+  color: red;
 }

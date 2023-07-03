@@ -12,6 +12,7 @@ import Hero from "../components/Hero";
 import Propos from "../components/Propos";
 import CardCompetence from "../components/CardCompetence";
 import CardProject from "../components/CardProjet";
+import CardContact from "../components/CardContact";
 
 function About() {
   // state
@@ -143,7 +144,7 @@ function About() {
               Compétences
             </li>
             <li className="navlink" onClick={comp4}>
-              4
+              Contact
             </li>
             <li className="navlink">5</li>
           </ul>
@@ -159,6 +160,8 @@ function About() {
             <CardCompetence opt={discordcomp} />
             <CardCompetence opt={rbxcomp} />
           </div>
+        ) : composant === 4 ? (
+          <CardContact />
         ) : composant === 2 ? (
           <div className="tout-comp">
             <div className="chercher">
