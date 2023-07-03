@@ -1,20 +1,21 @@
 module.exports = {
   apps: [
     {
-      script: "index.js",
-      watch: ".",
+      name: "app",
+      script: "./index.js",
+      //watch: ".",
     },
-    {
+    /*{
       script: "./service-worker/",
       watch: ["./service-worker"],
-    },
+    },*/
   ],
 
   deploy: {
     production: {
       user: "root",
-      host: "http://87.106.234.10/",
-      ref: "origin/master",
+      host: "87.106.234.10",
+      ref: "origin/main",
       repo: "https://github.com/Nocteln/site-perso",
       path: "/root/site-perso",
       "pre-deploy-local": "",
