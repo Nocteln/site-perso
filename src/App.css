@@ -2,12 +2,12 @@
   
 } */
 
-body {
-  /* background-color: #1B263B;
+/* body {
+  background-color: #1B263B;
   padding: 5vh 5vw; 
-  overflow: hidden; */
+  overflow: hidden;
   max-height: 100vh;
-}
+} */
 
 .all {
   height: 100vh;
@@ -90,6 +90,12 @@ position: relative;
   grid-template-columns: 95% 5%;
 }
 
+@media screen and (max-width: 1000px) {
+  .textHero {
+    display:none
+  }
+}
+
 /******************************  APropos  **********************************/
 
 .page {
@@ -107,6 +113,7 @@ position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-right: 5vw;
 }
 
 /**************************** Compétences ********************************/
@@ -162,9 +169,19 @@ position: relative;
   min-width: 30vw
 }
 
-.button-chercher button {
+.chercher button {
   margin: 10px;
-  min-width: 10vw
+  padding: 5px;
+  min-width: 10vw;
+  border: 1px solid transparent;
+  background: #e0e1dd;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+.chercher button:nth-child(3) {
+  font-size: 0.9rem;
 }
 
 
@@ -204,15 +221,20 @@ color: #0D1B2A;
   width: 15%;
 }
 
+/*barre de recherche : voir contact*/
+
+
+
+/****************************  Contact  ************************************/
 
 .contactForm {
   width: 50%;
   min-width: 40vw;
   max-width: 60vw;
-  height: 500px;
+  max-height: 60vh;
   background: #1b263b;
-  display: grid;
-  grid-template-rows: repeat(3, 104px);
+  display: flex;
+  flex-direction: column;
   border-radius: 16px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   position: relative;
@@ -222,9 +244,8 @@ color: #0D1B2A;
 } 
 
 .contact-container {
-  /* margin-left: 5vw; */
   overflow: auto;
-  max-height: 75vh;
+  /* max-height: 60vh; */
 
   padding: 50px;
   display: flex;
@@ -253,7 +274,7 @@ color: #0D1B2A;
   letter-spacing: 1px;
 }
 
-.contactForm input[type="text"],
+input[type="text"],
 .contactForm textarea {
   margin: 7px 0 7px;
   border: 1px solid transparent;
@@ -267,12 +288,7 @@ color: #0D1B2A;
   transition: 0.2s;
 }
 
-.contactForm input[type="text"]:focus,
-.contactForm textarea:focus {
-  border: 1px solid #5ef9a4;
-}
-
-.contactForm span {
+.contactForm p {
   margin-bottom: 20px;
   display: block;
   font-size: 0.9rem;
@@ -284,7 +300,7 @@ color: #0D1B2A;
   border: none;
   background: linear-gradient(65deg, #415a77, #778da9);
   width: 70%;
-  margin: 12px auto 0;
+  margin: 0 auto 0;
   color: #0D1B2A;
   border-radius: 150px;
   font-weight: bold;
@@ -292,7 +308,6 @@ color: #0D1B2A;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: 0.3s ease;
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

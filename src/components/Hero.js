@@ -7,11 +7,12 @@ export default function Hero() {
         <div>
           <h1>Eliott MIEZE</h1>
           <div className="barre"></div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-            itaque repudiandae sequi officiis ducimus expedita sapiente omnis
-            eveniet consequatur nostrum ratione numquam unde nemo laboriosam id
-            cupiditate, nulla quos hic.
+          <p className="textHero">
+            Je m'appelle Eliott, j'ai 16 ans et je suis passionné de
+            programmation depuis 5 ans. J'ai exploré le développement de jeux
+            sur Roblox, le développement web et la création de bots Discord. Je
+            prévois de poursuivre mes études dans l'informatique pour devenir un
+            développeur talentueux et polyvalent.uam?
           </p>
           <button>Télécharger mon CV</button>
         </div>

@@ -74,7 +74,7 @@ function About() {
 
   const filterData = (query, cat) => {
     // Replace the following placeholder data with your actual data source
-
+    console.log(query, cat);
     let filtered = projectsData;
 
     if (query) {
@@ -146,7 +146,6 @@ function About() {
             <li className="navlink" onClick={comp4}>
               Contact
             </li>
-            <li className="navlink">5</li>
           </ul>
         </div>
       </nav>
@@ -180,9 +179,6 @@ function About() {
                 <button onClick={() => handleCategoryButtonClick("Site web")}>
                   Site Web
                 </button>
-                {/* <button onClick={() => handleCategoryButtonClick("Autres")}>
-                  Autre
-                </button> */}
               </div>
               {
                 <button onClick={() => setFilteredData(projectsData)}>
@@ -190,11 +186,6 @@ function About() {
                 </button>
               }
             </div>
-            {/* <CardProject opt={kstcat} />
-            <CardProject opt={kstcat} />
-            <CardProject opt={kstcat} />
-            <CardProject opt={kstcat} />
-            <CardProject opt={kstcat} /> */}
             {filteredData.map((project) => (
               <CardProject key={project.nom} opt={project} />
             ))}
