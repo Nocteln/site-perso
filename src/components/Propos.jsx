@@ -19,16 +19,9 @@ export default function Propos() {
       <p>
         Au fil du temps, j'ai élargi mes horizons en me plongeant dans le
         développement web. J'ai appris les langages HTML, CSS et JavaScript, et
-        j'ai pu créer des sites web interactifs et attrayants. Cela m'a permis
+        j'ai pu créer des sites web. Cela m'a permis
         d'explorer les possibilités infinies offertes par le web et de
         développer mes compétences en programmation.
-      </p>
-      <p>
-        Au fil du temps, j'ai élargi mes horizons en me plongeant dans le
-        développement web. J'ai appris les langages HTML, CSS et JavaScript, et
-        j'ai pu créer de nombreux sites web. Cela m'a permis d'explorer les
-        possibilités infinies offertes par le web et de développer mes
-        compétences en programmation.
       </p>
       <p>
         N'hésitez pas à me contacter si vous souhaitez discuter de projets,

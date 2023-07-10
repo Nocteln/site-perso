@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+
 import "../App.css";
 import webimg from "../img/developpement-web.png";
 import discordimg from "../img/discord.png";
@@ -47,11 +48,10 @@ function About() {
     },
   ];
   const [composant, setComposant] = useState(2);
-
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState(projectsData);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
-  // comportements
 
   const handleSearchInputChange = (event) => {
     const query = event.target.value;
@@ -59,22 +59,16 @@ function About() {
     filterData(query, selectedCategory);
   };
 
-  // Function to filter data based on the search query
-  // const filterData = (query) => {
-  //   const filtered = projectsData.filter((project) =>
-  //     project.nom.toLowerCase().includes(query.toLowerCase())
-  //   );
-  //   setFilteredData(filtered);
-  // };
-
   const handleCategoryButtonClick = (category) => {
     setSelectedCategory(category);
     filterData(searchQuery, category);
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const filterData = (query, cat) => {
-    // Replace the following placeholder data with your actual data source
-    console.log(query, cat);
     let filtered = projectsData;
 
     if (query) {
@@ -114,45 +108,72 @@ function About() {
 
   const comp3 = () => {
     setComposant(3);
+    const comp = document.querySelector(".comp");
+    const all = document.querySelectorAll(".navlink");
+    all.forEach((e) => {
+      e.classList.remove("active");
+    });
+    comp.classList.add("active");
   };
   const comp4 = () => {
     setComposant(4);
+    const comp = document.querySelector(".cont");
+    const all = document.querySelectorAll(".navlink");
+    all.forEach((e) => {
+      e.classList.remove("active");
+    });
+    comp.classList.add("active");
   };
 
   const comp2 = () => {
     setComposant(2);
+
+    const comp = document.querySelector(".port");
+    const all = document.querySelectorAll(".navlink");
+    all.forEach((e) => {
+      e.classList.remove("active");
+    });
+    comp.classList.add("active");
   };
 
   const comp1 = () => {
     setComposant(1);
+    const comp = document.querySelector(".prop");
+    const all = document.querySelectorAll(".navlink");
+    all.forEach((e) => {
+      e.classList.remove("active");
+    });
+    comp.classList.add("active");
   };
-  //affichage
 
   return (
     <div className="all">
       <nav>
         <h1 className="navlink">Eliott MIEZE</h1>
-        <div>
-          <ul id="navbar">
-            <li className="navlink" onClick={comp1}>
-              A Propos
-            </li>
-            <li className="navlink" onClick={comp2}>
-              Portfolio
-            </li>
-            <li className="navlink" onClick={comp3}>
-              Compétences
-            </li>
-            <li className="navlink" onClick={comp4}>
-              Contact
-            </li>
-          </ul>
+        <ul id="navbar" className={isMenuOpen ? "open" : ""}>
+          <li className="navlink prop" onClick={comp1}>
+            A Propos
+          </li>
+          <li className="navlink port" onClick={comp2}>
+            Portfolio
+          </li>
+          <li className="navlink comp" onClick={comp3}>
+            Compétences
+          </li>
+          <li className="navlink cont" onClick={comp4}>
+            Contact
+          </li>
+        </ul>
+        <div className="toggle-btn" onClick={toggleMenu}>
+          <i className="fa-solid fa-bars"></i>
         </div>
       </nav>
       <div className="page">
         <Hero />
         {composant === 1 ? (
-          <Propos />
+          <div className="tout-comp">
+            <Propos />
+          </div>
         ) : composant === 3 ? (
           <div className="tout-comp">
             <CardCompetence opt={webcomp} />{" "}
