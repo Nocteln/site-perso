@@ -15,7 +15,7 @@ import CardCompetence from "../components/CardCompetence";
 import CardProject from "../components/CardProjet";
 import CardContact from "../components/CardContact";
 
-function About() {
+function Acceuil() {
   // state
   const projectsData = [
     {
@@ -219,4 +219,4 @@ function About() {
   );
 }
 
-export default About;
+export default Acceuil;

@@ -18,7 +18,9 @@ export default function CardProject({ opt }) {
       <div className="desc">
         <h1>{opt.nom}</h1>
         <h3>{opt.description}</h3>
-        <a>En savoir +</a>
+        <a href={opt.ref} target="_blank">
+          En savoir +
+        </a>
       </div>
       <img src={opt.img} alt={"Image de " + opt.nom} />
       {/* {openModal && <ProjectModal obj={t} />} */}

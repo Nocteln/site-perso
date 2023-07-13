@@ -199,7 +199,7 @@ export default function CardContact() {
           />
           <p>{errors.msg?.message}</p>
         </div>
-        <input type="submit" value="Valider" />
+        <input type="submit" value="Envoyer" />
       </form>
     </div>
   );

@@ -14,7 +14,35 @@ export default function Hero() {
             prévois de poursuivre mes études dans l'informatique pour devenir un
             développeur talentueux et polyvalent.uam?
           </p>
-          <button>Télécharger mon CV</button>
+          <h3>Mes résaux :</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/Nocteln" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/nocteln/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <i
+                class="fa-brands fa-discord"
+                onClick={() => {
+                  alert("pseudo discord : nocteln");
+                }}
+              ></i>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCN1be_fRN7sFle6Qw8GcANg"
+                target="_blank"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="barre2"></div>
