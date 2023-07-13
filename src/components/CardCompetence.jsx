@@ -4,9 +4,9 @@ export default function CardCompetence({ opt }) {
       <div className="part1">
         <h2>{opt.titre}</h2>
         <div>
-          <p>Languages utilisé : {opt.language}</p>
+          <p>Langages utilisé : {opt.language}</p>
           <p>Framework utilisé : {opt.frame}</p>
-          <p>Maitrise estimée : {opt.maitr}</p>
+          <p>Maîtrise estimée : {opt.maitr}</p>
         </div>
       </div>
       <div className="image-container">

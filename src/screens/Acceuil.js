@@ -8,6 +8,7 @@ import kstcatimg from "../img/kstcatlogo.PNG";
 import ncbot from "../img/nc-bot.png";
 import notBot from "../img/not-bot.png";
 import noctelnGames from "../img/noctelngames.png";
+import siteperso from "../img/sitePerso.png";
 
 import Hero from "../components/Hero";
 import Propos from "../components/Propos";
@@ -20,7 +21,7 @@ function Acceuil() {
   const projectsData = [
     {
       nom: "Normalcochon-bot",
-      description: "Un bot discord fait pour un youtubeur",
+      description: "Un bot Discord fait pour un youtubeur",
       ref: "https://github.com/Nocteln/nc-bot",
       img: ncbot,
       cat: "Bot",
@@ -33,8 +34,15 @@ function Acceuil() {
       cat: "Site web",
     },
     {
+      nom: "Site Perso",
+      description: "Le site sur lequel vous êtes ^^",
+      ref: "https://github.com/Nocteln/site-perso",
+      img: siteperso,
+      cat: "Site web",
+    },
+    {
       nom: "Not-Bot",
-      description: "Bot discord multifonctions",
+      description: "Bot Discord multifonctions",
       ref: "https://github.com/Nocteln/not-bot",
       img: notBot,
       cat: "Bot",
@@ -85,21 +93,21 @@ function Acceuil() {
   };
 
   const webcomp = {
-    titre: "Developpement Web",
+    titre: "Développement Web",
     language: "Javascript, HTML, CSS",
     frame: "React.js",
     maitr: "J'ai des bases mais à consolider",
     img: webimg,
   };
   const discordcomp = {
-    titre: "Developpement Discord",
+    titre: "Développement Discord",
     language: "Javascript",
     frame: "Discord.js",
     maitr: "De bonnes bases",
     img: discordimg,
   };
   const rbxcomp = {
-    titre: "Developpement Roblox",
+    titre: "Développement Roblox",
     language: "Lua",
     frame: "Aucun",
     maitr: "Plus fort en build qu'en code",

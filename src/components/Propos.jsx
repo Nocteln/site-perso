@@ -6,7 +6,7 @@ export default function Propos() {
         Bonjour, je m'appelle <span style={{ color: "#fe0015" }}>Eliott</span>{" "}
         et je suis passionné de programmation depuis quelques années. À{" "}
         <strong>16 ans</strong>, je consacre une grande partie de mon temps à
-        créer toutes sortes de <strong>proggrames</strong>. Mon objectif est de
+        créer toutes sortes de <strong>programmes</strong>. Mon objectif est de
         poursuivre mes études dans le domaine de l'informatique et de devenir un
         développeur.
       </p>
@@ -22,16 +22,16 @@ export default function Propos() {
         Au fil du temps, j'ai élargi mes horizons en me plongeant dans le
         <span style={{ color: "#fe0015" }}> développement web</span>. J'ai
         appris les langages HTML, CSS et JavaScript, et j'ai pu créer des sites
-        web. Cela m'a permis d'explorer les possibilités infinies offertes par
-        le web et de développer mes compétences en programmation.
+        web. Cela m'a permis d'explorer les possibilités offertes par le web et
+        de développer mes compétences en programmation.
       </p>
       <p>
         N'hésitez pas à me <strong>contacter</strong> si vous souhaitez discuter
         de projets, partager des idées ou simplement en savoir plus sur mon
-        parcours. Je suis toujours ouvert aux opportunités de collaboration et
-        d'apprentissage.
+        parcours. Cela me ferait plaisir d'échanger avec vous afin d'apprendre
+        de nouvelles choses et de partager.
       </p>
-      <h3>Mes résaux :</h3>
+      <h3>Mes réseaux :</h3>
       <ul>
         <li>
           <a href="https://github.com/Nocteln" target="_blank">
