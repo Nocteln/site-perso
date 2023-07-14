@@ -25,6 +25,10 @@ function Acceuil() {
       ref: "https://github.com/Nocteln/nc-bot",
       img: ncbot,
       cat: "Bot",
+      btn2: [
+        "inviter",
+        "https://discord.com/api/oauth2/authorize?client_id=831938139500970007&permissions=8&scope=bot",
+      ],
     },
     {
       nom: "Kstcat",
@@ -32,6 +36,7 @@ function Acceuil() {
       ref: "https://github.com/Nocteln/kst-cat",
       img: kstcatimg,
       cat: "Site web",
+      btn2: ["Visiter", "great-goldstine.87-106-234-10.plesk.page"],
     },
     {
       nom: "Site Perso",
@@ -46,6 +51,10 @@ function Acceuil() {
       ref: "https://github.com/Nocteln/not-bot",
       img: notBot,
       cat: "Bot",
+      btn2: [
+        "inviter",
+        "https://discord.com/api/oauth2/authorize?client_id=938161748832305224&permissions=8&scope=bot",
+      ],
     },
     {
       nom: "Nocteln Games",
@@ -53,6 +62,7 @@ function Acceuil() {
       ref: "https://github.com/Nocteln/noctelngames",
       img: noctelnGames,
       cat: "Site web",
+      btn2: ["visiter", "https://nocteln.space"],
     },
   ];
   const [composant, setComposant] = useState(2);
@@ -199,6 +209,7 @@ function Acceuil() {
                   placeholder="Rechercher..."
                   value={searchQuery}
                   onChange={handleSearchInputChange}
+                  onSubmit={(e) => e.preventDefault()}
                 />
               </form>
               <div className="button-chercher">
