@@ -1133,6 +1133,8 @@ body {
         text-align: center;
         color: #E0E1DD;
         padding: 5px;
+        display: flex;
+        flex-direction: column;
       }
 
       .projectAll .desc h1 {
@@ -1148,7 +1150,6 @@ body {
         padding-right: 25px;
         border-radius: 5px;
         margin-top: 7px;
-        margin: 25px;
       }
       
       .projectAll a:hover {

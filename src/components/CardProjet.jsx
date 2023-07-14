@@ -1,18 +1,4 @@
-// import { useState } from "react";
-// import ProjectModal from "../components/ProjectModal";
-
 export default function CardProject({ opt }) {
-  // const [openModal, setOpenModal] = useState(false);
-  // const t = {
-  //   title: "test",
-  //   body: "tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",
-  //   href1: "https://google.com",
-  //   btn1: "cc",
-  //   href2: "https://google.com",
-  //   btn2: "cc",
-  //   close: setOpenModal,
-  // };
-
   return (
     <div className="projectAll">
       <div className="desc">
@@ -30,13 +16,6 @@ export default function CardProject({ opt }) {
         )}
       </div>
       <img src={opt.img} alt={"Image de " + opt.nom} />
-      {/* {openModal && <ProjectModal obj={t} />} */}
     </div>
   );
 }
-
-/*button
-          onclick={() => {
-            setOpenModal(true);
-          }}
-        >*/
