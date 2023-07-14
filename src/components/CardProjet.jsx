@@ -21,6 +21,13 @@ export default function CardProject({ opt }) {
         <a href={opt.ref} target="_blank">
           En savoir +
         </a>
+        {opt.btn2 ? (
+          <a href={opt.btn2[1]} target="_blank">
+            {opt.btn2[0]}
+          </a>
+        ) : (
+          <p />
+        )}
       </div>
       <img src={opt.img} alt={"Image de " + opt.nom} />
       {/* {openModal && <ProjectModal obj={t} />} */}

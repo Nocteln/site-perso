@@ -14,7 +14,7 @@ export default function Header() {
         >
           <h1>Eliott MIEZE</h1>
         </NavLink>
-        <div>
+        <div className="nav">
           <ul id="navbar">
             <li>
               <NavLink
