@@ -1,9 +1,12 @@
-export default function Propos() {
+export default function Propos({ onRick }) {
   return (
     <div className="propos">
       <h1>A Propos</h1>
       <p>
-        Bonjour, je m'appelle <span style={{ color: "#fe0015" }}>Eliott</span>{" "}
+        Bonjour, je m'appelle{" "}
+        <span onClick={onRick} style={{ color: "#fe0015" }}>
+          Eliott
+        </span>{" "}
         et je suis passionné de programmation depuis quelques années. À{" "}
         <strong>16 ans</strong>, je consacre une grande partie de mon temps à
         créer toutes sortes de <strong>programmes</strong>. Mon objectif est de

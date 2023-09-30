@@ -9,12 +9,15 @@ import ncbot from "../img/nc-bot.png";
 import notBot from "../img/not-bot.png";
 import noctelnGames from "../img/noctelngames.png";
 import siteperso from "../img/sitePerso.png";
+import python from "../img/Python-logo-notext.svg.png";
 
 import Hero from "../components/Hero";
 import Propos from "../components/Propos";
 import CardCompetence from "../components/CardCompetence";
 import CardProject from "../components/CardProjet";
 import CardContact from "../components/CardContact";
+import RickRoll from "../components/RickRoll";
+import rickRoll from "../img/rick.mp4";
 
 function Acceuil() {
   // state
@@ -64,8 +67,15 @@ function Acceuil() {
       cat: "Site web",
       btn2: ["visiter", "https://nocteln.space"],
     },
+    {
+      nom: "Generateur de video",
+      description: "Générateur de vidéo par ia en python",
+      ref: "https://github.com/Nocteln/video_generator",
+      img: python,
+      cat: "autre",
+    },
   ];
-  const [composant, setComposant] = useState(2);
+  const [composant, setComposant] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState(projectsData);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -126,6 +136,7 @@ function Acceuil() {
 
   const comp3 = () => {
     setComposant(3);
+    setIsMenuOpen(false);
     const comp = document.querySelector(".comp");
     const all = document.querySelectorAll(".navlink");
     all.forEach((e) => {
@@ -134,6 +145,7 @@ function Acceuil() {
     comp.classList.add("active");
   };
   const comp4 = () => {
+    setIsMenuOpen(false);
     setComposant(4);
     const comp = document.querySelector(".cont");
     const all = document.querySelectorAll(".navlink");
@@ -145,6 +157,7 @@ function Acceuil() {
 
   const comp2 = () => {
     setComposant(2);
+    setIsMenuOpen(false);
 
     const comp = document.querySelector(".port");
     const all = document.querySelectorAll(".navlink");
@@ -156,6 +169,7 @@ function Acceuil() {
 
   const comp1 = () => {
     setComposant(1);
+    setIsMenuOpen(false);
     const comp = document.querySelector(".prop");
     const all = document.querySelectorAll(".navlink");
     all.forEach((e) => {
@@ -163,6 +177,10 @@ function Acceuil() {
     });
     comp.classList.add("active");
   };
+
+  function rickroll5() {
+    setComposant(5);
+  }
 
   return (
     <div className="all">
@@ -190,7 +208,7 @@ function Acceuil() {
         <Hero />
         {composant === 1 ? (
           <div className="tout-comp">
-            <Propos />
+            <Propos onRick={rickroll5} />
           </div>
         ) : composant === 3 ? (
           <div className="tout-comp">
@@ -219,6 +237,9 @@ function Acceuil() {
                 <button onClick={() => handleCategoryButtonClick("Site web")}>
                   Site Web
                 </button>
+                <button onClick={() => handleCategoryButtonClick("autre")}>
+                  Autres...
+                </button>
               </div>
               {
                 <button onClick={() => setFilteredData(projectsData)}>
@@ -230,6 +251,10 @@ function Acceuil() {
               <CardProject key={project.nom} opt={project} />
             ))}
           </div>
+        ) : composant === 5 ? (
+          <video autoPlay loop>
+            <source src={rickRoll} type="video/mp4" />
+          </video>
         ) : (
           "salu"
         )}
