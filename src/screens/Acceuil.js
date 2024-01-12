@@ -39,7 +39,7 @@ function Acceuil() {
       ref: "https://github.com/Nocteln/kst-cat",
       img: kstcatimg,
       cat: "Site web",
-      btn2: ["Visiter", "great-goldstine.87-106-234-10.plesk.page"],
+      btn2: ["Visiter", "https://kstcat.nocteln.fr"],
     },
     {
       nom: "Site Perso",
@@ -65,7 +65,7 @@ function Acceuil() {
       ref: "https://github.com/Nocteln/noctelngames",
       img: noctelnGames,
       cat: "Site web",
-      btn2: ["visiter", "https://nocteln.space"],
+      btn2: ["visiter", "https://games.nocteln.fr"],
     },
     {
       nom: "Generateur de video",
