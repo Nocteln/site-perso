@@ -10,6 +10,7 @@ import notBot from "../img/not-bot.png";
 import noctelnGames from "../img/noctelngames.png";
 import siteperso from "../img/sitePerso.png";
 import python from "../img/Python-logo-notext.svg.png";
+import nike from "../img/nike.png";
 
 import Hero from "../components/Hero";
 import Propos from "../components/Propos";
@@ -23,15 +24,19 @@ function Acceuil() {
   // state
   const projectsData = [
     {
-      nom: "Normalcochon-bot",
-      description: "Un bot Discord fait pour un youtubeur",
-      ref: "https://github.com/Nocteln/nc-bot",
-      img: ncbot,
-      cat: "Bot",
-      btn2: [
-        "inviter",
-        "https://discord.com/api/oauth2/authorize?client_id=831938139500970007&permissions=8&scope=bot",
-      ],
+      nom: "Nike App",
+      description: "site vitrine de vente de chaussures",
+      ref: "https://github.com/Nocteln/nike_app",
+      img: nike,
+      cat: "Site web",
+      btn2: ["visiter", "https://nike.nocteln.fr"],
+    },
+    {
+      nom: "Site Perso",
+      description: "Le site sur lequel vous êtes ^^",
+      ref: "https://github.com/Nocteln/site-perso",
+      img: siteperso,
+      cat: "Site web",
     },
     {
       nom: "Kstcat",
@@ -42,13 +47,6 @@ function Acceuil() {
       btn2: ["Visiter", "https://kstcat.nocteln.fr"],
     },
     {
-      nom: "Site Perso",
-      description: "Le site sur lequel vous êtes ^^",
-      ref: "https://github.com/Nocteln/site-perso",
-      img: siteperso,
-      cat: "Site web",
-    },
-    {
       nom: "Not-Bot",
       description: "Bot Discord multifonctions",
       ref: "https://github.com/Nocteln/not-bot",
@@ -57,6 +55,17 @@ function Acceuil() {
       btn2: [
         "inviter",
         "https://discord.com/api/oauth2/authorize?client_id=938161748832305224&permissions=8&scope=bot",
+      ],
+    },
+    {
+      nom: "Normalcochon-bot",
+      description: "Un bot Discord fait pour un youtubeur",
+      ref: "https://github.com/Nocteln/nc-bot",
+      img: ncbot,
+      cat: "Bot",
+      btn2: [
+        "inviter",
+        "https://discord.com/api/oauth2/authorize?client_id=831938139500970007&permissions=8&scope=bot",
       ],
     },
     {

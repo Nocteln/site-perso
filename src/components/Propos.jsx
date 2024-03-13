@@ -54,6 +54,14 @@ export default function Propos({ onRick }) {
             }}
           ></i>
         </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/eliott-mieze-b15114232/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
       </ul>
     </div>
   );

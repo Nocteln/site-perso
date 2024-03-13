@@ -171,7 +171,7 @@ body {
     background: #7289da;
   }
   .hero ul li:nth-child(4):before {
-    background: #e1306c;
+    background: #0a66c2;
   }
   .hero ul li:hover:before {
     filter: blur(3px);
@@ -188,7 +188,7 @@ body {
     box-shadow: 0 0 15px #7289da;
   }
   .hero ul li:nth-child(4):hover:before {
-    box-shadow: 0 0 15px #e1306c;
+    box-shadow: 0 0 15px #0a66c2;
   }
   .hero ul li:nth-child(1):hover {
     color: #616161;
@@ -207,8 +207,8 @@ body {
   }
   .hero ul li:nth-child(4):hover {
     color: #e1306c;
-    box-shadow: 0 0 15px #e1306c;
-    text-shadow: 0 0 15px #e1306c;
+    box-shadow: 0 0 15px #0a66c2;
+    text-shadow: 0 0 15px #0a66c2;
   }
 
   /******************************  APropos  **********************************/
@@ -586,7 +586,7 @@ body {
     background: #7289da;
   }
   .propos ul li:nth-child(4):before {
-    background: #e1306c;
+    background: #0a66c2;
   }
   .propos ul li:hover:before {
     filter: blur(3px);
@@ -602,7 +602,7 @@ body {
     box-shadow: 0 0 15px #7289da;
   }
   .propos ul li:nth-child(4):before {
-    box-shadow: 0 0 15px #e1306c;
+    box-shadow: 0 0 15px #0a66c2;
   }
   .propos ul li:nth-child(1) {
     color: #616161;
@@ -621,8 +621,8 @@ body {
   }
   .propos ul li:nth-child(4) {
     color: #e1306c;
-    box-shadow: 0 0 15px #e1306c;
-    text-shadow: 0 0 15px #e1306c;
+    box-shadow: 0 0 15px #0a66c2;
+    text-shadow: 0 0 15px #0a66c2;
   }
 
   /**************************** Compétences ********************************/
@@ -982,7 +982,7 @@ body {
     background: #7289da;
   }
   .propos ul li:nth-child(4):before {
-    background: #e1306c;
+    background: #0a66c2;
   }
   .propos ul li:hover:before {
     filter: blur(3px);
@@ -998,7 +998,7 @@ body {
     box-shadow: 0 0 15px #7289da;
   }
   .propos ul li:nth-child(4):before {
-    box-shadow: 0 0 15px #e1306c;
+    box-shadow: 0 0 15px #0a66c2;
   }
   .propos ul li:nth-child(1) {
     color: #616161;
@@ -1017,8 +1017,8 @@ body {
   }
   .propos ul li:nth-child(4) {
     color: #e1306c;
-    box-shadow: 0 0 15px #e1306c;
-    text-shadow: 0 0 15px #e1306c;
+    box-shadow: 0 0 15px #0a66c2;
+    text-shadow: 0 0 15px #0a66c2;
   }
 
   .page .propos {
