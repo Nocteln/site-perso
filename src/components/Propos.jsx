@@ -54,14 +54,6 @@ export default function Propos({ onRick }) {
             }}
           ></i>
         </li>
-        <li>
-          <a
-            href="https://www.youtube.com/channel/UCN1be_fRN7sFle6Qw8GcANg"
-            target="_blank"
-          >
-            <i class="fab fa-youtube"></i>
-          </a>
-        </li>
       </ul>
     </div>
   );
