@@ -27,7 +27,10 @@ export default function Hero() {
               </a>
             </li>
             <li>
-              <a href="discordapp.com/users/562693590514532362" target="_blank">
+              <a
+                href="https://discordapp.com/users/562693590514532362"
+                target="_blank"
+              >
                 <i class="fa-brands fa-discord"></i>
               </a>
             </li>
