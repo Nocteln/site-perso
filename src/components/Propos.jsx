@@ -37,12 +37,12 @@ export default function Propos({ onRick }) {
       <h3>Mes réseaux :</h3>
       <ul>
         <li>
-          <a href="https://github.com/Nocteln" target="_blank">
+          <a href="https://github.com/Nocteln" target="_blank" rel="noreferrer">
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/nocteln/" target="_blank">
+          <a href="https://www.instagram.com/nocteln/" target="_blank" rel="noreferrer">
             <i class="fab fa-instagram"></i>
           </a>
         </li>
@@ -57,7 +57,7 @@ export default function Propos({ onRick }) {
         <li>
           <a
             href="https://www.linkedin.com/in/eliott-mieze-b15114232/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <i class="fa-brands fa-linkedin"></i>
           </a>
