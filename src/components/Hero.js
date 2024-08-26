@@ -17,19 +17,19 @@ export default function Hero() {
           <h3>Mes réseaux :</h3>
           <ul>
             <li>
-              <a href="https://github.com/Nocteln" target="_blank">
+              <a href="https://github.com/Nocteln" target="_blank" rel="noreferrer">
                 <i class="fa-brands fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/nocteln/" target="_blank">
+              <a href="https://www.instagram.com/nocteln/" target="_blank" rel="noreferrer">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li>
               <a
                 href="https://discordapp.com/users/562693590514532362"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <i class="fa-brands fa-discord"></i>
               </a>
@@ -37,7 +37,7 @@ export default function Hero() {
             <li>
               <a
                 href="https://www.linkedin.com/in/eliott-mieze-b15114232/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <i class="fa-brands fa-linkedin"></i>
               </a>
