@@ -4,11 +4,11 @@ export default function CardProject({ opt }) {
       <div className="desc">
         <h1>{opt.nom}</h1>
         <h3>{opt.description}</h3>
-        <a href={opt.ref} target="_blank">
+        <a href={opt.ref} target="_blank" rel="noreferrer">
           En savoir +
         </a>
         {opt.btn2 ? (
-          <a href={opt.btn2[1]} target="_blank">
+          <a href={opt.btn2[1]} target="_blank" rel="noreferrer">
             {opt.btn2[0]}
           </a>
         ) : (
